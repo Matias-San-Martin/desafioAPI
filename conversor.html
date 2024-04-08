@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script defer src="./assets/js/script.js"></script>
     <title>Document</title>
 </head>
@@ -14,16 +15,24 @@
         <hr>
         <div class="operador">
             <h3>Pesos CLP</h3>
-            <input type="text" name="" id="" placeholder="Ingrese el monto en CLP">
+            <input type="text" name="CLP" id="inputMonedas" placeholder="Ingrese el monto en CLP">
             <p>Moneda a convertir</p>
-            <select name="" id="">
+            <select name="" id="selectorMoneda">
                 <option value="" disabled selected hidden>Selecciona una moneda</option>
-                <option value="">USD</option>
-                <option value="">CAD</option>
+                <option value="dolar">USD</option>
+                <option value="euro">EUR</option>
             </select>
-            <button>Buscar</button>
-            <p>...</p>
+            <button id="convertirMoneda">Convertir</button>
+            <span id="cotizacionMoneda"></span>
         </div>
+        <canvas class="graficoMoneda"></canvas>
     </div>
+
+
+
+    <!-- <script>
+    </script> -->
+
+
 </body>
 </html>
